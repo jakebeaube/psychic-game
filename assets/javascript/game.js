@@ -9,7 +9,7 @@ function checkguess()
 	var output = document.getElementById('output');
 	var myNumber = guess.value;
 
-		numGuesses--;
+		numGuesses++;
 	
 	if (myNumber < thenumber) 
 	{
@@ -28,6 +28,16 @@ function checkguess()
 		wins++
 		document.getElementById('wins');
 	}
+
+	/*else if (numGuesses == 0)
+
+	{	
+		output.value = "You Lose!"
+		alert( "You Took Too Many Guesses");
+		losses++
+		document.getElementById('losses');
+		
+	}*/
 	
 	
 
